@@ -1,4 +1,4 @@
-<style>@import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single+Ink:wght@100..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+g<style>@import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single+Ink:wght@100..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 </style>@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
 
 
@@ -62,7 +62,7 @@
   gap: 20px;
   display: flex;
   align-items: center;
-  margin right: 40px;
+  margin-right: 40px;
 
 }
 
@@ -80,14 +80,15 @@ a {
 }
 
 .cuenta {
-  width: 90x;
-  height: 40px;
-  border-radius: 8px;
-  font-size: 18px;
+   font-size: 18px;
   font-family: "DM Sans", sans-serif;
   color: black;
   background-color: white;
   margin-right: 30px;
+  border-radius: 8px;
+  height: 40px;
+  width: 90px
+
 }
 
 .hero {
@@ -157,10 +158,11 @@ a {
 
 
 .inicio1 img {
-  width: 110%;
+  width: 100%;
   height: auto;
   display: block;
   border-radius: 12px;
+  max-width: 100%;
 }
 
 
@@ -359,12 +361,13 @@ footer {
 
 
 .img {
-
-  width: 440px;
-  height: 400px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: left
+display: flex;
+justify-content: flex-start;
+align-items: left;
+  width: 100%;
+  max-width: 440px;
+  height: auto
+  
 }
 
 
@@ -470,6 +473,148 @@ footer {
 
 
 
+@media screen and (max-width: 320px) {
+
+  
+  body {
+    font-size: 14px;
+  }
+
+  .navegation {
+    flex-direction: column;
+    gap: 8px;
+    padding: 8px;
+  }
+
+  .navegation-opcion {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .title1 {
+    font-size: 28px;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  .p-inicial {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .empezarya {
+    width: 140px;
+    height: 45px;
+    font-size: 14px;
+  }
+
+  .container {
+    padding: 0 10px;
+  }
+
+  .inicio1 img {
+    width: 100%;
+    height: auto;
+  }
+
+
+  .articles {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .article1, .article2 {
+    width: 100%;
+    padding: 16px;
+  }
+
+  .subtitle {
+    font-size: 22px;
+    line-height: 1.3;
+  }
+
+  .paragraph {
+    font-size: 14px;
+  }
+
+  
+  .footer- {
+    padding: 0 10px;
+    align-items: center;
+  }
+
+  .logos,
+  .footer-politic,
+  .footer-hostinger-24-25 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .tarject img {
+    width: 50px;
+    height: 30px;
+  }
+
+  .kodee-btn {
+    right: 10px;
+    bottom: 10px;
+    font-size: 13px;
+    padding: 8px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .navegation {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  .navegation-opcion {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .container {
+    flex-direction: column;
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .inicio, .inicio1 {
+    max-width: 100%;
+  }
+
+  .title1 {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .p-inicial {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .inicio1 img {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .articles {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .article1, .article2 {
+    max-width: 90%;
+  }
+}
+
+
 
 
 @media screen and (min-width: 768px) {
@@ -483,6 +628,8 @@ footer {
     flex-direction: row;
     gap: 20px;
   }
+.hero {
+    padding: 40px 20px;}
 
   .hero .container {
     flex-direction: row;
@@ -506,6 +653,58 @@ footer {
 
   .article1, .article2 {
     flex: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    padding: 20px 0;
+  }
+
+  .footer- {
+    width: 100%;
+    padding: 0 20px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .logos,
+  .footer-politic,
+  .footer-hostinger-24-25 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .footer-logos {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .varios {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .tarject {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .footer-politic {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .footer-hostinger-24-25 {
+    border-top: 1px solid #00bfff;
+    padding-top: 10px;
+    font-size: 13px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 }
 
@@ -566,4 +765,8 @@ footer {
   .article1, .article2 {
     padding: 35px;
   }
+}
+
+@media screen and (max-width: 400px) {
+  .kodee-btn { right: 10px; bottom: 10px; font-size: 12px; padding: 6px; }
 }
